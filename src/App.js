@@ -11,9 +11,9 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
-      { path: "/", element: <Homepage /> },
-      { path: "/products", element: <ProductsPage /> },
-      { path: "/products/:id", element: <ProductDetails /> },
+      { index: true, element: <Homepage /> }, // all are absolute paths starting from slash
+      { path: "products", element: <ProductsPage /> },
+      { path: "products/:id", element: <ProductDetails /> }, // if we remove slash it will become relative path following root path
     ],
   },
 ]);

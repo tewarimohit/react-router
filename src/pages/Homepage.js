@@ -10,7 +10,9 @@ const Homepage = () => {
     <div>
       <h1>This is my Homepage</h1>
 
-      <Link to="/products">Go to product page</Link>
+      <Link to="products" relative="path">
+        Go to product page
+      </Link>
       <button onClick={navigateHandler}>Go to product</button>
     </div>
   );

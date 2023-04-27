@@ -12,7 +12,7 @@ const ProductsPage = () => {
       <h1>This is my Products Page</h1>
       {PRODUCTS.map((article, index) => (
         <li key={index}>
-          <Link to={`/products/${article.id}`}>
+          <Link to={`${article.id}`}>
             {article.name}
             <span>{article.price}</span>
           </Link>

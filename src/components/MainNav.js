@@ -10,7 +10,7 @@ const MainNav = () => {
             <li>
               {" "}
               <NavLink
-                to="/"
+                to=""
                 className={({ isActive }) => (isActive ? "active" : undefined)}
                 end
               >
@@ -20,7 +20,7 @@ const MainNav = () => {
             <li className="list">
               {" "}
               <NavLink
-                to="/products"
+                to="products"
                 className={({ isActive }) => (isActive ? "active" : undefined)}
               >
                 Products
